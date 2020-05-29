@@ -110,7 +110,7 @@ def getGeneratingDirectory():
 def getLoadDirectory():
     ''' For getting saved model data path '''
     if env.GLOBAL_IS_PUBLISHED == True:
-        loadDirectory = './ModelSave/' + env.GLOBAL_MODEL_LOAD_DIRECTORY_PUBLISHED + '/'
+        loadDirectory = '/content/ApolloGAN/ApolloGAN_Project/ModelSave/' + env.GLOBAL_MODEL_LOAD_DIRECTORY_PUBLISHED + '/'
     else:
-        loadDirectory = './ModelSave/' + env.GLOBAL_MODEL_LOAD_DIRECTORY_TRAIN + '/'
+        loadDirectory = '/content/ApolloGAN/ApolloGAN_Project/ModelSave/' + env.GLOBAL_MODEL_LOAD_DIRECTORY_TRAIN + '/'
     return loadDirectory
