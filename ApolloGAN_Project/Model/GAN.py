@@ -230,7 +230,7 @@ class GAN:
 
 
     def saveModel(self, number):
-        saveDirectory = './ModelSave/' + env.GLOBAL_MODEL_SAVE_DIRECTORY_TRAIN
+        saveDirectory = '/content/ApolloGAN/ApolloGAN_Project/ModelSave/' + env.GLOBAL_MODEL_SAVE_DIRECTORY_TRAIN
         if not(os.path.isdir(saveDirectory)):
             os.makedirs(os.path.join(saveDirectory))
         
